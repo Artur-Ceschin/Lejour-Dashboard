@@ -2,8 +2,12 @@ const endPointCasaisChurn = '/casais/churn';
 const endPointCasaisOrcamento = '/casais/orcamento';
 
 window.onload = function() {
+    $('#tabela-churn').scheletrone();
+    $('#chart-loading').scheletrone();
+
     obterDadosAPILejour(endPointCasaisChurn, carregarTabelaChurn);
     obterDadosAPILejour(endPointCasaisOrcamento, renderizarGraficoCasamentosVsOrcamento);
+
 }
 
 function criarLinhaTabela(id, data) {
@@ -21,17 +25,20 @@ function criarLinhaTabela(id, data) {
 }
 
 function carregarTabelaChurn(dadosChurn) {
+    $('#tabela-churn').empty();
+
     for(let i = 0; i < 4; i++) {
         criarLinhaTabela(dadosChurn[i].id_usuario, dadosChurn[i].data_casamento);
     }
-
-    var totalChurn = $('#total-churn').text(dadosChurn.length);
+    $('#total-churn').text(dadosChurn.length);
 }
 
 function renderizarGraficoCasamentosVsOrcamento(data) {
+    $('#chart-loading').remove();
+
     var titulos = data.map((x) => x.faixa_valor);
     var dadosCasamentos = data.map((x) => x.quantidade_casamentos);
-
+    
     var barChartData = {
         labels: titulos,
         datasets: [{
@@ -56,7 +63,8 @@ function renderizarGraficoCasamentosVsOrcamento(data) {
             title: {
                 display: true,
                 text: ''
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 }
