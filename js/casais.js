@@ -34,7 +34,7 @@ function carregarTabelaChurn(dadosChurn) {
 }
 
 function renderizarGraficoCasamentosVsOrcamento(data) {
-    $('#chart-loading').remove();
+    $('#chart-loading').addClass('d-none');
 
     var titulos = data.map((x) => x.faixa_valor);
     var dadosCasamentos = data.map((x) => x.quantidade_casamentos);
@@ -71,6 +71,7 @@ function renderizarGraficoCasamentosVsOrcamento(data) {
 
 function filtrarGraficoCasamentoVsOrcamentoData(queryParams) {
     window.myBar.destroy();
+    $('#chart-loading').removeClass('d-none');
 
     obterDadosAPILejour(endPointCasaisOrcamento, renderizarGraficoCasamentosVsOrcamento, queryParams);
 }

@@ -2,12 +2,17 @@ const endPointFornecedoresRanking = '/fornecedores/ranking';
 const endPointFornecedoresInvoices = '/fornecedores/invoices';
 
 window.onload = function() {
+
+    $('#chart-loading1').scheletrone();
+    $('#chart-loading2').scheletrone();
+
     obterDadosAPILejour(endPointFornecedoresRanking, renderizarGraficoCategoriaVsFatura);
     obterDadosAPILejour(endPointFornecedoresInvoices, renderizarGraficoAgendamentoVsFatura);
 }
 
 
 function renderizarGraficoCategoriaVsFatura(data) {
+    $('#chart-loading1').addClass('d-none');
 
     var titulos = data.map((x) => x.categoria);
     var dadosFornecedores = data.map((x) => x.negocios_fechados);
@@ -39,7 +44,7 @@ function renderizarGraficoCategoriaVsFatura(data) {
                 display: true,
                 text: ''
             },
-            maintainAspectRatio: true
+            maintainAspectRatio: false
         }
     });
 
@@ -47,6 +52,7 @@ function renderizarGraficoCategoriaVsFatura(data) {
 }
 
 function renderizarGraficoAgendamentoVsFatura(data) {
+    $('#chart-loading2').addClass('d-none');
 
     var titulos = data.map((x) => x.categoria);
     var dadosAgendamentos = data.map((x) => x.agendamentos_realizados);
@@ -94,19 +100,22 @@ function renderizarGraficoAgendamentoVsFatura(data) {
                 yAxes: [{
                     stacked: true
                 }]
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 }
 
 function filtrarGraficoCategoriaVsFatura(queryParams) {
     myBar1.destroy();
+    $('#chart-loading1').removeClass('d-none');
 
     obterDadosAPILejour(endPointFornecedoresRanking, renderizarGraficoCategoriaVsFatura, queryParams);
 }
 
 function filtrarGraficoAgendamentoVsFatura(queryParams) {
     myBar2.destroy();
+    $('#chart-loading2').removeClass('d-none');
 
     obterDadosAPILejour(endPointFornecedoresInvoices, renderizarGraficoAgendamentoVsFatura, queryParams);
 }
