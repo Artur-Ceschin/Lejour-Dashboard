@@ -1,0 +1,144 @@
+.conatainer-lejour{
+
+    .btn-local button{
+        background: white;
+        border-radius: 180px;
+        width: 50px;
+    }
+
+    .first-btn {
+        button{
+            width: 200px;
+            border-radius:30px;
+            padding:10px;
+            background-color:$azul;
+            border: none;
+            cursor:pointer;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+           
+        }
+        .ativo{
+            background-color:$goiaba;
+            font-weight:bold;
+        }
+    
+   
+    }
+
+    .conteudo-principal{
+        margin-top:24px;
+        font-family: 'Lato', sans-serif;
+        overflow-x: hidden;
+        max-width: 1220px;
+        margin: auto;
+      
+        .width-cards{
+            min-width: 580px;
+            height: auto;
+            background: #FFFFFF;
+            box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+            border-radius: 30px;
+            padding: 50px;
+            margin-bottom:20px;
+            
+        }
+    
+        img{
+            width: 40px;
+        }
+        p,a {
+            line-height: 28px;
+            font-size:18px;
+        };
+    
+        
+        .first-content{
+            p{
+                margin-left:66px;
+                width: 460px;
+                
+            }
+            .header-cards{
+                
+                align-items: center;
+        
+               .card-content{
+                   width: 460px;
+                   
+                   h2{
+                    font-size:20px;
+                    font-weight:bold;
+                    margin-left:22px
+                   }
+               }
+            }
+          
+        }
+    
+        .botoes-card{
+            
+            
+            .button-color{
+                background: #FFFFFF;
+                border-radius: 30px;
+                box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+                outline: none;
+                cursor: pointer;
+            }
+            p{
+                margin: 0px;
+                padding: 8px;
+            }
+            .footer-content{
+                color: white;
+                background-color: $azul;
+                border-radius: 30px;
+                padding: 17px 56px;
+                border: none;
+                width: 200px;
+            }
+            .circle-button{
+                width: 60px;
+                padding:15px;
+            }
+            
+        }
+    
+        .botoes-casamento{
+            button{
+                padding:8px 10px;
+                border: none;
+                border-radius: 30px;
+                color: white;
+                background-color:$azul;
+                margin-right: 10px;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    
+        iframe{
+            border-radius: 30px;;
+            margin: 0 auto;
+            padding:0;
+            margin-top:20px;
+        }
+    
+        .campo-pesquisa{
+    
+            input{
+                border-radius: 30px;
+            }
+            
+        }
+    
+        
+    }
+}
+
+ .mapa{
+     max-width: 800px;
+ }

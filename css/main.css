@@ -1,0 +1,161 @@
+.header {
+  background: linear-gradient(269.41deg, #DB5D79 0.41%, #E2645A 99.41%);
+}
+
+.header .logo {
+  width: 70px;
+}
+
+.header img {
+  width: 40px;
+}
+
+.header .right-header svg {
+  width: 40px;
+  margin-right: 40px;
+}
+
+.header .right-header a {
+  margin-right: 20px;
+}
+
+.header .right-header button {
+  width: 40px;
+  border-radius: 36px;
+  border: none;
+  height: 40px;
+  margin-right: 40px;
+}
+
+.conatainer-lejour .btn-local button {
+  background: white;
+  border-radius: 180px;
+  width: 50px;
+}
+
+.conatainer-lejour .first-btn button {
+  width: 200px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #84B8E2;
+  border: none;
+  cursor: pointer;
+}
+
+.conatainer-lejour .first-btn button a {
+  color: white;
+  text-decoration: none;
+}
+
+.conatainer-lejour .first-btn .ativo {
+  background-color: #EA8079;
+  font-weight: bold;
+}
+
+.conatainer-lejour .conteudo-principal {
+  margin-top: 24px;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  max-width: 1220px;
+  margin: auto;
+}
+
+.conatainer-lejour .conteudo-principal .width-cards {
+  min-width: 580px;
+  height: auto;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+          box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+  border-radius: 30px;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.conatainer-lejour .conteudo-principal img {
+  width: 40px;
+}
+
+.conatainer-lejour .conteudo-principal p, .conatainer-lejour .conteudo-principal a {
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.conatainer-lejour .conteudo-principal .first-content p {
+  margin-left: 66px;
+  width: 460px;
+}
+
+.conatainer-lejour .conteudo-principal .first-content .header-cards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conatainer-lejour .conteudo-principal .first-content .header-cards .card-content {
+  width: 460px;
+}
+
+.conatainer-lejour .conteudo-principal .first-content .header-cards .card-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 22px;
+}
+
+.conatainer-lejour .conteudo-principal .botoes-card .button-color {
+  background: #FFFFFF;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+          box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+  outline: none;
+  cursor: pointer;
+}
+
+.conatainer-lejour .conteudo-principal .botoes-card p {
+  margin: 0px;
+  padding: 8px;
+}
+
+.conatainer-lejour .conteudo-principal .botoes-card .footer-content {
+  color: white;
+  background-color: #84B8E2;
+  border-radius: 30px;
+  padding: 17px 56px;
+  border: none;
+  width: 200px;
+}
+
+.conatainer-lejour .conteudo-principal .botoes-card .circle-button {
+  width: 60px;
+  padding: 15px;
+}
+
+.conatainer-lejour .conteudo-principal .botoes-casamento button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background-color: #84B8E2;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.conatainer-lejour .conteudo-principal iframe {
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.conatainer-lejour .conteudo-principal .campo-pesquisa input {
+  border-radius: 30px;
+}
+
+.mapa {
+  max-width: 800px;
+}
+
+* {
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=main.css.map */
