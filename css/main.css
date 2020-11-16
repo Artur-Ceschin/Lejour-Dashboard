@@ -11,7 +11,7 @@
 }
 
 .header .right-header svg {
-  width: 40px;
+  width: 30px;
   margin-right: 40px;
 }
 
@@ -20,11 +20,16 @@
 }
 
 .header .right-header button {
-  width: 40px;
-  border-radius: 36px;
+  width: 60px;
+  border-radius: 8px;
   border: none;
   height: 40px;
-  margin-right: 40px;
+  margin-right: 20px;
+}
+
+.header .right-header button a {
+  margin: 0 auto;
+  color: #585858;
 }
 
 .conatainer-lejour .btn-local button {
@@ -61,7 +66,7 @@
 }
 
 .conatainer-lejour .conteudo-principal .width-cards {
-  min-width: 580px;
+  width: auto;
   height: auto;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
@@ -78,6 +83,29 @@
 .conatainer-lejour .conteudo-principal p, .conatainer-lejour .conteudo-principal a {
   line-height: 28px;
   font-size: 18px;
+}
+
+.conatainer-lejour .conteudo-principal .card-mapa {
+  margin: 0 auto;
+  width: 800px;
+  -webkit-box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+          box-shadow: 0px 16px 31px rgba(88, 88, 88, 0.1);
+  border-radius: 30px;
+}
+
+.conatainer-lejour .conteudo-principal .card-mapa .map-content {
+  padding: 50px;
+}
+
+.conatainer-lejour .conteudo-principal .card-mapa .map-content iframe {
+  width: 700px;
+}
+
+.conatainer-lejour .conteudo-principal .card-mapa .map-content input {
+  width: 550px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #BABABA;
 }
 
 .conatainer-lejour .conteudo-principal .first-content p {
@@ -138,13 +166,6 @@
   margin-right: 10px;
   outline: none;
   cursor: pointer;
-}
-
-.conatainer-lejour .conteudo-principal iframe {
-  border-radius: 30px;
-  margin: 0 auto;
-  padding: 0;
-  margin-top: 20px;
 }
 
 .conatainer-lejour .conteudo-principal .campo-pesquisa input {
