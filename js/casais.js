@@ -15,13 +15,13 @@ function criarLinhaTabela(id, data) {
         .addClass(['btn', 'btn-block', 'd-flex', 'justify-content-between', 'button-color', 'mt-3', 'align']);
     
     var p1 = $('<p></p>').text('ID:' + id);
-    var p2 = $('<p></p>').text(data);
+    var p2 = $('<p></p>').text(moment(data).format('DD/MM/YYYY'));
 
     button.append(p1);
     button.append(p2);
 
     var tabelaChurn = $('#tabela-churn');
-    tabelaChurn.prepend(button);
+    tabelaChurn.append(button);
 }
 
 function carregarTabelaChurn(dadosChurn) {

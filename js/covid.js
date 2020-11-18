@@ -8,6 +8,12 @@ window.onload = function() {
 
     obterDadosAPILejour(endPointCasaisEstilos, renderizarGraficoEstilosCasamentoPorTempo);
     
+    ativaBotao('btn-ar-livre');
+    ativaBotao('btn-urbano');
+    ativaBotao('btn-a-dois');
+    ativaBotao('btn-destination');
+    ativaBotao('btn-mini-casamento');
+    ativaBotao('btn-em-casa');
 }
 
 function trataDadosAPI(info) {
