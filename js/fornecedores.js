@@ -64,15 +64,15 @@ function renderizarGraficoAgendamentoVsFatura(data) {
             label: "Agendamentos",
             borderWidth: 1,
             data: dadosAgendamentos,
-            backgroundColor: laranjaLejour,
-            hoverBackgroundColor: goiabaLejour
+            backgroundColor: azulCeuLejour,
+            hoverBackgroundColor: verdeAguaEscuroLejour
         },
         {
             label: "Invoices",
             borderWidth: 1,
             data: dadosInvoicesAceitas,
-            backgroundColor: azulCeuLejour,
-            hoverBackgroundColor: verdeAguaEscuroLejour
+            backgroundColor: laranjaLejour,
+            hoverBackgroundColor: goiabaLejour
         }]
     };
 
