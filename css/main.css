@@ -1,3 +1,11 @@
+.btn-toggle-active {
+  background-color: #EA8079;
+}
+
+.btn-toggle-inactive {
+  background-color: #84B8E2;
+}
+
 .header {
   background: linear-gradient(269.41deg, #DB5D79 0.41%, #E2645A 99.41%);
 }
@@ -168,7 +176,7 @@
   border: none;
   border-radius: 30px;
   color: white;
-  background-color: #84B8E2;
+  background-color: #EA8079;
   margin-right: 10px;
   outline: none;
   cursor: pointer;
@@ -186,3 +194,4 @@
   overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */
+
