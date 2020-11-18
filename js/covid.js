@@ -1,65 +1,21 @@
 const endPointCasaisEstilos = '/casais/estilos';
+const coresCategoriasCasamentos = ['#EA8079', '#FFB854', '#DB5D79', '#84B8E2', '#68BFB7', '#E2645A', '#86D0CB'];
 
 window.onload = function() {
     $('#chart-loading').scheletrone();
 
-    renderizarGraficoEstilosCasamentoPorTempo([
-        {
-            estilo: 'Casamento no campo',
-            dados: [
-                {
-                    mes_ano: 'Janeiro/2019',
-                    quantidade: 10
-                },
-                {
-                    mes_ano: 'Fevereiro/2019',
-                    quantidade: 29
-                },
-                {
-                    mes_ano: 'Março/2019',
-                    quantidade: 20
-                },
-                {
-                    mes_ano: 'Abril/2019',
-                    quantidade: 15
-                },
-            ]
-        },
-        {
-            estilo: 'Casamento na cidade',
-            dados: [
-                {
-                    mes_ano: 'Janeiro/2019',
-                    quantidade: 35
-                },
-                {
-                    mes_ano: 'Fevereiro/2019',
-                    quantidade: 10
-                },
-                {
-                    mes_ano: 'Março/2019',
-                    quantidade: 5
-                },
-                {
-                    mes_ano: 'Abril/2019',
-                    quantidade: 16
-                },
-            ]
-        }
-    ]);
+    obterDadosAPILejour(endPointCasaisEstilos, renderizarGraficoEstilosCasamentoPorTempo);
+    
 }
 
 function trataDadosAPI(info) {
     let datasets = [];
-    console.log(info);
     for(let i = 0; i < info.length; i++) {
-        console.log(info[0]);
-
         datasets.push({
             label: info[i].estilo,
             borderWidth: 5,
-            backgroundColor: laranjaLejour,
-            borderColor: laranjaLejour,
+            backgroundColor: coresCategoriasCasamentos[i],
+            borderColor: coresCategoriasCasamentos[i],
             data: info[i].dados.map((x) => x.quantidade),
             fill: false
         })
@@ -72,10 +28,9 @@ function renderizarGraficoEstilosCasamentoPorTempo(data) {
     $('#chart-loading').addClass('d-none');
     
     var obtemDadosTratados = trataDadosAPI(data);
-    console.log(obtemDadosTratados);
 
     var barChartData = {
-        labels: ['Janeiro/2019', 'Janeiro/2019', 'Janeiro/2019', 'Janeiro/2019'],
+        labels: data[0].dados.map(x => x.mes_ano),
         datasets: obtemDadosTratados
     };
 

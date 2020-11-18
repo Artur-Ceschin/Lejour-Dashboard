@@ -5,6 +5,7 @@ const verdeAguaEscuroLejour = '#68BFB7';
 
 function obterDadosAPILejour(endpoint, callback, queryParams) {
     var URL_TO_FETCH = `https://challenge-lejour-api.herokuapp.com/api${endpoint}`;
+    
 
     if(typeof queryParams !== "undefined") {
         if(queryParams.length > 0) {
