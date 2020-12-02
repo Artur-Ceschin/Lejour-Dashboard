@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./assets/github/logo.jpg" height="150" width="175"/>
+  <img src="./assets/github/logo.jpg" width="175"/>
 </p>
 
 # Dashboard Lejour in partnership with FIAP
