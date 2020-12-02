@@ -11,6 +11,7 @@
 * CSS3
 * Javascript
 * Sass
+* Bootstrap 4
 
 ## Project demonstration
 ![](./assets/github/lejourdashboard.gif)
