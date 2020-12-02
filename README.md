@@ -6,7 +6,7 @@
 # Dashboard Lejour in partnership with FIAP
 ### Year-end challenge with the goal of creating a dashboard
 
-## technologies used in the project
+## technologies used in this project
 * HTML5
 * CSS3
 * Javascript
